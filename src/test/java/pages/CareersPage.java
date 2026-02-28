@@ -86,8 +86,6 @@ public class CareersPage extends pageFunctions {
         Assertions.assertTrue(driver.getCurrentUrl().contains("jobs.lever.co/insider"),
                 "Lever page not opened. Current URL: " + driver.getCurrentUrl());
 
-        driver.close();
-        driver.switchTo().window(mainWindow);
     }
 
 }
