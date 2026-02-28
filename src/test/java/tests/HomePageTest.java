@@ -1,11 +1,10 @@
 package tests;
 
-import base.BaseTest;
-import org.junit.jupiter.api.Assertions;
+import functions.seleniumFunctions;
 import org.junit.jupiter.api.Test;
 import pages.HomePage;
 
-public class HomePageTest extends BaseTest {
+public class HomePageTest extends seleniumFunctions {
 
     @Test
     void loadHomePage() {
@@ -13,4 +12,5 @@ public class HomePageTest extends BaseTest {
         homePage.open();
         homePage.isHomePageLoaded();
     }
+
 }

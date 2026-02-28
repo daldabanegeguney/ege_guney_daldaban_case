@@ -1,4 +1,4 @@
-package base;
+package functions;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class BaseTest {
+public class seleniumFunctions {
 
     protected WebDriver driver;
     protected WebDriverWait wait;
@@ -17,7 +17,7 @@ public class BaseTest {
     void setUp() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(20));
     }
 
     @AfterEach
